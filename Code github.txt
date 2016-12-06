@@ -1,0 +1,68 @@
+﻿
+W:\Desktop\Lab02\demo>git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Bai-Lab-So-2-Git.docx   <-- cái này màu đỏ (chưa đóg gói)
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+W:\Desktop\Lab02\demo>git diff
+
+W:\Desktop\Lab02\demo>git remote -v
+
+W:\Desktop\Lab02\demo>git remote add origin https://github.com/tulaune/testthu.g
+it
+
+W:\Desktop\Lab02\demo>git remote -v
+origin  https://github.com/tulaune/testthu.git (fetch)
+origin  https://github.com/tulaune/testthu.git (push)
+
+W:\Desktop\Lab02\demo>git add .
+
+W:\Desktop\Lab02\demo>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Bai-Lab-So-2-Git.docx  <-- cái này màu xanh (đã đóg gói)
+
+
+W:\Desktop\Lab02\demo>git commit -m "File doc"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+
+W:\Desktop\Lab02\demo>git commit -m "File doc"
+[master (root-commit) 6f0f88f] File doc
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Bai-Lab-So-2-Git.docx
+
+W:\Desktop\Lab02\demo>git push origin master
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 16.05 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/tulaune/testthu.git
+ * [new branch]      master -> master
+
+W:\Desktop\Lab02\demo>
+
+
